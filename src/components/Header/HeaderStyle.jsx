@@ -5,6 +5,13 @@ export const HeaderContainer = styled.section`
     height: 10vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+`
+
+export const HeaderStyle = styled.div`
+    margin-left: 30px;
+    h1 {
+        font-size: 50px;
+    }
 `

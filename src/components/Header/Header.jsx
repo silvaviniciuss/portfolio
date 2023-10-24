@@ -1,9 +1,11 @@
-import { HeaderContainer } from "./HeaderStyle"
+import { HeaderContainer, HeaderStyle } from "./HeaderStyle"
 
 export const Header = () => {
     return (
         <HeaderContainer>
-            <h1>Cabeçalho</h1>
+            <HeaderStyle>
+                <h1>Vinícius Da Silva</h1>
+            </HeaderStyle>
         </HeaderContainer>
     )
 }

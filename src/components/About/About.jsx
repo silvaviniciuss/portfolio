@@ -1,8 +1,20 @@
-import { AboutContainer } from "./AboutStyle"
+import { AboutContainer, AboutDecription, AboutImage, AboutStyle, AboutTechnologies } from "./AboutStyle"
 
 export const About = () => {
     return (
-        <AboutContainer><h1>Sobre</h1></AboutContainer>
-        
+        <AboutContainer>
+            <AboutStyle>
+                <AboutImage>
+                    <img src="#" alt="" />
+                </AboutImage>
+                <AboutDecription>
+                    sobre
+                </AboutDecription>
+                <AboutTechnologies>
+                    tecnologias
+                </AboutTechnologies>
+            </AboutStyle>
+        </AboutContainer>
+
     )
 }

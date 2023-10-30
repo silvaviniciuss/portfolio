@@ -32,8 +32,11 @@ export const ProjectCard = ({ proj }) => {
             <ProjectUtilsContainer>
                 <ProjectImages>
                     <h5>Tecnologias Utilizadas:</h5>
-                    {proj.technologies.map((tech)=>{
-                        return <img src={technologiesUsed(tech)}/>
+                    {proj.technologies.map((tech, index)=>{
+                        return <img 
+                        key={index}
+                        src={technologiesUsed(tech)
+                        }/>
                     })}
                 </ProjectImages>
             </ProjectUtilsContainer>

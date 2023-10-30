@@ -11,8 +11,9 @@ export const Header = () => {
             </HeaderStyle>
             <HeaderContacts>
                 {
-                    contacts.map((contact) => {
+                    contacts.map((contact, index) => {
                         return <Contacts
+                        key={index}
                             url={contact.url}
                             link={contact.link}
                         />

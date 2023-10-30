@@ -28,8 +28,9 @@ export const About = () => {
                         <h1>Habilidades</h1>
                     </AboutTechnologiesTitle>
                     <AboutTechnologiesSkills>
-                        {skills.map((skill) => {
+                        {skills.map((skill, index) => {
                             return <CardSkills
+                                key={index}
                                 name = {skill.name}
                                 logo = {skill.logo}
                             />

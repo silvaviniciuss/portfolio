@@ -35,6 +35,17 @@ export const projects = [
         deploy: "https://pink-addition.surge.sh/",
         stack: "Front-end"
     },
+    {
+        title: "Labecommerce",
+        image: labecommerce,
+        description: "Projeto visando criação de uma página frond-end de produtos. Adicionando as funcionalidades de filtragem (valor minimo, máximo e pesquisar por nome), além da implemetanção de um carrinho de compras para realizar a adição de produtos, soma total de produtos, excluição de quantidade ou total dos produtos colocados no carrinho.",
+        technologies: [
+            "react", "javascript", "html5", "css3"
+        ],
+        repositorie: "https://github.com/silvaviniciuss/projeto-frontendreact",
+        deploy: "https://pink-addition.surge.sh/",
+        stack: "Front-end"
+    },
     
 
 ]

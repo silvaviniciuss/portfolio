@@ -10,12 +10,10 @@ export const HomeContainer = styled.main`
 export const AboutSection = styled.section`
     width: 30vw;
     height: 90vh;
-    border: 1px dashed blue;
-    
 `
-
 export const ProjectsSection = styled.section`
     width: 70vw;
     height: 90vh;
-    border: 1px dashed black;
+    overflow-y: scroll;
+   
 `

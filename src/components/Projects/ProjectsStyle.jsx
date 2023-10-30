@@ -7,20 +7,29 @@ export const ProjectContainer = styled.main`
     align-items: center;
     height: 100%;
     width: 100%;
+    
+    
 
 `
 export const ProjectContainerTitle = styled.section`
     width: 100%;
     height: 10%;
-    border: 1px dashed #e717a9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 40px;
+    }
 `
 
 export const ProjectStyleContainer = styled.section`
-    border: 1px dashed #9d3838;
     width: 100%;
     height: 90%;
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
+
 `
 export const ProjectExample = styled.div`
     border: 1px solid #0a4aea;

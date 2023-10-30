@@ -17,19 +17,51 @@ export const AboutStyle = styled.section`
 `
 
 export const AboutImage = styled.figure`
-    border: 1px dashed blue;
     width: 100%;
     height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 55%;
+        height: 90%;
+        border-radius: 20%;
+    }
 `
 
 export const AboutDecription = styled.article`
-    border: 1px dashed green;
     width: 100%;
     height: 30%;
+    p {
+        text-align: justify;
+        margin: 10px;
+        font-weight: 620;
+    }
 `
 
 export const AboutTechnologies = styled.article`
-    border: 1px dashed blueviolet;
     width: 100%;
-    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 30px;
+    align-items: center;
+
 `
+
+export const AboutTechnologiesTitle = styled.div`
+    height: 10%;
+    h1 {
+        font-size: 25px;
+    }
+`
+
+export const AboutTechnologiesSkills = styled.div`
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 10px;
+`
+

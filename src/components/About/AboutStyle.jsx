@@ -27,6 +27,12 @@ export const AboutImage = styled.figure`
         height: 90%;
         border-radius: 20%;
     }
+@media screen and (max-width : 1200px) {
+    img {
+        width: 20%;
+        height: 100%;
+    }
+}
 `
 
 export const AboutDecription = styled.article`
@@ -37,6 +43,18 @@ export const AboutDecription = styled.article`
         margin: 10px;
         font-weight: 620;
     }
+
+    
+@media screen and (max-width : 1800px) {
+    height: 60%;
+}
+
+@media screen and (max-width : 1500px) {
+    height: 50%;
+}
+@media screen and (max-width : 1500px) {
+    text-align: center;
+}
 `
 
 export const AboutTechnologies = styled.article`

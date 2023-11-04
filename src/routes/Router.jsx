@@ -8,6 +8,7 @@ export const Router = () => {
         <BrowserRouter>
         <Header/>
             <Routes>
+                <Route index element={<Home/>}/>
                 <Route path="/portfolio" element={<Home/>}/>
             </Routes>
         </BrowserRouter>

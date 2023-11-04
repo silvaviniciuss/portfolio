@@ -7,9 +7,8 @@ export const ProjectContainer = styled.main`
     align-items: center;
     height: 100%;
     width: 100%;
-    
-    
 
+  
 `
 export const ProjectContainerTitle = styled.section`
     width: 100%;
@@ -36,4 +35,10 @@ export const ProjectExample = styled.div`
     height: 300px;
     margin: 10px 10px 10px 10px;
 
+`
+
+export const Hr = styled.hr`
+   width: 95%;
+   margin-left: 2%;
+   border: 1px solid black;
 `

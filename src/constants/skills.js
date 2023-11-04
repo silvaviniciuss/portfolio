@@ -8,6 +8,7 @@ import angularLogo from "../assets/skills/angular.png"
 import gitHubLogo from "../assets/skills/github.png"
 import htmlLogo from "../assets/skills/html-5.png"
 import cssLogo from "../assets/skills/css-3.png"
+import jestLogo from "../assets/skills/jest.png"
 
 export const skills = [
     {
@@ -50,5 +51,28 @@ export const skills = [
         name: "GitHub",
         logo: gitHubLogo
     },
+    {
+        name: "Jest Test",
+        logo: jestLogo
+    },
 
 ]
+
+export const technologiesUsed = (tech) => {
+    switch(tech) {
+        case "javascript":
+            return javascriptLogo
+        case "typescript":
+            return typescriptLogo
+        case "html5":
+            return htmlLogo
+        case "css3":
+            return cssLogo
+        case "react":
+            return reactLogo
+        case "sqllite":
+            return sqlLogo
+        case "jest test":
+            return jestLogo
+    }
+}

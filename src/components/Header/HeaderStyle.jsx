@@ -19,6 +19,14 @@ export const HeaderStyle = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+@media screen and (max-width : 1600px) {
+    width: 40%;
+
+}
+@media screen and (max-width : 1160px) {
+    width: 50%;
+
+}
 `
 
 export const HeaderContacts = styled.div`
@@ -26,4 +34,8 @@ export const HeaderContacts = styled.div`
     display: flex;
     justify-content: center;
     column-gap: 30px;
+@media screen and (max-width : 1600px) {
+    width: 60%;
+
+}
 `

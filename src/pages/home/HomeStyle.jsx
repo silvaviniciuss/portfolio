@@ -5,15 +5,22 @@ export const HomeContainer = styled.main`
     flex-direction: row;
     width: 100%;
     height: 90vh;
+@media screen and (max-width : 1200px) {
+    flex-direction: column;
+}
 `
 
 export const AboutSection = styled.section`
     width: 30vw;
     height: 90vh;
+@media screen and (max-width : 1200px) {
+    width: 100%;
+    height: 50vh;
+}
 `
 export const ProjectsSection = styled.section`
-    width: 70vw;
-    height: 90vh;
+    width: 100%;
+    height: 100%;
     overflow-y: scroll;
    
 `

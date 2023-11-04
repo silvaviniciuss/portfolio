@@ -1,5 +1,7 @@
 import { ProjectCardContainer, ProjectDescriptionContainer, ProjectImages, ProjectTitleImageContainer, ProjectUtilsContainer, ProjectUtilsLinks } from "./ProjectCardStyle"
-import { technologiesUsed } from "../../Utils/technologies"
+
+import { Technologies } from "../Technologies/Technologies"
+import { technologiesUsed } from "../../constants/skills"
 
 export const ProjectCard = ({ proj }) => { 
     
@@ -33,10 +35,11 @@ export const ProjectCard = ({ proj }) => {
                 <ProjectImages>
                     <h5>Tecnologias Utilizadas:</h5>
                     {proj.technologies.map((tech, index)=>{
-                        return <img 
-                        key={index}
-                        src={technologiesUsed(tech)
-                        }/>
+                        return <Technologies 
+                            key={index}    
+                            name = {tech}
+                            logo = {technologiesUsed(tech)}
+                        />
                     })}
                 </ProjectImages>
             </ProjectUtilsContainer>

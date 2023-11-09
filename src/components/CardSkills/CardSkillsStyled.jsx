@@ -1,13 +1,12 @@
 import styled from "styled-components"
 
-export const CardSkillsContainer = styled.main`
+export const CardSkillsContainer = styled.div`
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-
+    align-items: center;
     img {
-        width: 80px;
-        height: 80px;
+        width: 70%;
+        height: 70%;
     }
 
     p {

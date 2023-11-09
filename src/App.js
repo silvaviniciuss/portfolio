@@ -1,12 +1,11 @@
-import './App.css';
-import { GlobalStyle } from './GlobalStyle';
-import { GlobalState } from './contexts/GlobalState';
-import { Router } from './routes/Router';
+import { GlobalStyle } from "./GlobalStyle";
+import { GlobalState } from "./contexts/GlobalState";
+import { Router } from "./routes/Router";
 
 function App() {
   return (
     <GlobalState>
-      <GlobalStyle />
+      <GlobalStyle/>
       <Router />
     </GlobalState>
   );

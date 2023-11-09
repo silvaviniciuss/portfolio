@@ -1,14 +1,13 @@
-import { globalContext } from "./globalContext"
-import { projects } from "../constants/projects"
-import {useState} from "react"
+import { useState } from "react"
+import {globalContext} from "./globalContext"
 
 export const GlobalState = ({children}) => {
-    const [projectCard] = useState(projects)
+    const [hiddenMenu, setHiddenMenu] = useState(false)
 
     const context = {
-        projectCard
+        hiddenMenu,
+        setHiddenMenu
     }
-    
     return (
         <globalContext.Provider value={context}>
             {children}

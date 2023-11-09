@@ -1,33 +1,35 @@
-import { globalContext } from "../../contexts/globalContext"
-import { ProjectCard } from "../ProjectCard/ProjectCard"
-import { Hr, ProjectContainer, ProjectContainerTitle, ProjectStyleContainer } from "./ProjectsStyle"
-import { useContext } from "react"
+import { ProjectCard } from "./ProjectCard/ProjectCard"
+import { ProjectsCardContaier, ProjectsContainer, ProjectsTitle } from "./ProjectsStyled"
+import { projects } from "../../constants/projects"
+import { Swiper, SwiperSlide } from "swiper/react"
+import 'swiper/css'
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 export const Projects = () => {
-    const { projectCard } = useContext(globalContext)
 
     return (
-        <ProjectContainer>
-            
-            <ProjectContainerTitle>
-                <h1>Projetos</h1>
-            </ProjectContainerTitle>
-            
-            
-            <ProjectStyleContainer>
-                {projectCard.map((project, index) => {
-                    return <>   
-                    <ProjectCard
-                        key={index}
-                        proj={project}
-                    />
-                    <Hr/>
-                    </>
-                })}
-            </ProjectStyleContainer>
-            
-            
-        </ProjectContainer>
-
+        <ProjectsContainer>
+            <ProjectsTitle>
+                <h1>PROJETOS</h1>
+            </ProjectsTitle>
+            <ProjectsCardContaier>
+                <Swiper
+                    slidesPerView={1}
+                    pagination={{ clickable: true }}
+                    scrollbar={{ draggable: true }}
+                >
+                    {projects.map((project) => {
+                        return (
+                            <SwiperSlide>
+                                <ProjectCard
+                                    project={project}
+                                />
+                            </SwiperSlide>
+                        )
+                    })}
+                </Swiper>
+            </ProjectsCardContaier>
+        </ProjectsContainer>
     )
 }

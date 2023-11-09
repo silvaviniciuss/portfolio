@@ -1,6 +1,7 @@
-import { CardSkillsContainer } from "./CardSkillsStyle"
+import { CardSkillsContainer } from "./CardSkillsStyled"
 
-export const CardSkills = ({name, logo}) => {
+export const CardSkills = ({ name, logo }) => {
+    
     return (
         <CardSkillsContainer>
             <p>{name}</p>

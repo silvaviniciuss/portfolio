@@ -1,9 +1,9 @@
-import { ContactImage } from "./ContactsStyle"
-
-export const Contacts = ({url, link}) => {
+export const Contacts = ({ link, url }) => {
     return (
-        <ContactImage>
-            <a href={link} target="blank"><img src={url} alt="" /></a>
-        </ContactImage>
+        <figure>
+            <a href={link} target="_blank" rel="noopener noreferrer">
+                <img src={url} alt={url}/>
+            </a>
+        </figure>
     )
 }

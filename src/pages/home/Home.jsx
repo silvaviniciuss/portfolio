@@ -1,16 +1,13 @@
 import { About } from "../../components/About/About"
 import { Projects } from "../../components/Projects/Projects"
-import { AboutSection, HomeContainer, ProjectsSection } from "./HomeStyle"
+import { HomeContainer } from "./HomeStyle"
+
 
 export const Home = () => {
-    return (
+    return(
         <HomeContainer>
-            <AboutSection>
-                <About />
-            </AboutSection>
-            <ProjectsSection>
-                <Projects />
-            </ProjectsSection>
+            <About/>
+            <Projects/>
         </HomeContainer>
     )
 }

@@ -1,11 +1,11 @@
-import { TechnologiesContainer, TechnologiesContainerTitle, TechnologiesImageContainer } from "./TechnologiesStyle"
+import { TechnologiesContainer, TechnologiesContainerTitle, TechnologiesImageContainer } from "./TechnologiesStyled"
 
 export const Technologies = ({ name, logo }) => {
-    console.log(name, logo)
+
     return (
         <TechnologiesContainer>
             <TechnologiesImageContainer>
-                <img src={logo} alt="" />
+                <img src={logo} alt={name} />
             </TechnologiesImageContainer>
             <TechnologiesContainerTitle>
                 <p>{name}</p>
